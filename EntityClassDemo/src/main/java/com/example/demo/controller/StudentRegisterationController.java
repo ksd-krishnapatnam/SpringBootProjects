@@ -28,7 +28,7 @@ public class StudentRegisterationController {
 		return sr;
 	}
 	
-	@GetMapping("/getAll")
+	@GetMapping("/getAll") //this method returns all students list
 	public List<StudentRegister> getAllStudents(){
 		return srs.getAllStudents();
 	}
