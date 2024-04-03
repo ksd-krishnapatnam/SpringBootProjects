@@ -33,7 +33,7 @@ public class StudentRegisterationController {
 		return srs.getAllStudents();
 	}
 	
-	@GetMapping("/getById/{studentId}")
+	@GetMapping("/getById/{studentId}") //this method returns student by using student id
 	public Optional<StudentRegister> getStudentById(@PathVariable Long studentId) {
 		Optional<StudentRegister> sr = srs.getStudentById(studentId);
 		return sr;
