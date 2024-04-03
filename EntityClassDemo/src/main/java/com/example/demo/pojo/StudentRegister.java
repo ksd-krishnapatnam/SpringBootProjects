@@ -25,13 +25,13 @@ public class StudentRegister {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long student_id;
 
-	@Column(name="student_name")
+	@Column(name="student_name") //This is student name
 	private String student_name;
 	
-	@Column (name = "mobile_number")
+	@Column (name = "mobile_number") //student's mobile number
 	private Long mobile_number;
 	
-	@Column (name = "email_id")
+	@Column (name = "email_id") //student's mail id
 	private String email_id;
 	
 	@Column (name = "registered_date")
